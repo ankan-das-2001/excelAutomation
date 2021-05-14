@@ -39,7 +39,7 @@ def parseWorkBook(previous_dirnames,file):
 
         # This bunch of code is actually used to assign the value competitor names
         keyword_array = new_df['Keyword'].to_numpy()
-        s = previous_dirnames.rsplit('/',1)
+        s = previous_dirnames.rsplit('\\',1)
         competitor_name =s[1]
 
         #Adding the competitor
