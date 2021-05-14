@@ -66,6 +66,7 @@ def parseWorkBook(previous_dirnames,file):
 
 def parsingLast():
     # Concatanating all the dataframes into one common dataframe named new_dataframe
+    
     new_dataframe = pd.concat(Dataframes)
 
     # Sorting the dataframe calculating the
