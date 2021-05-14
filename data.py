@@ -4,7 +4,6 @@ import pandas as pd
 import csv
 import numpy
 import xlsxwriter
-from IPython.display import HTML
 
 Dataframes=[]
 Competitor_name = []
