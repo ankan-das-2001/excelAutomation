@@ -58,7 +58,7 @@ def parseWorkBook(previous_dirnames,file):
         Competitor_name.append(competitor_name)
         new_df[competitor_name] = hyperlink_df[competitor_name]
         new_df=new_df.drop(['Position','URL'],axis=1)
-
+        print(new_df)
         #Final
         Dataframes.append(new_df)
 
@@ -66,7 +66,8 @@ def parseWorkBook(previous_dirnames,file):
 
 def parsingLast():
     # Concatanating all the dataframes into one common dataframe named new_dataframe
-    
+    print(Dataframes[0])
+    print(Dataframes[1])
     new_dataframe = pd.concat(Dataframes)
 
     # Sorting the dataframe calculating the
